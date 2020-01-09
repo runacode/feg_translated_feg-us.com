@@ -33,12 +33,12 @@ if(isset($qs['Value'])){
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', <?= $FaceCon->pixel_id; ?>);
+    fbq('init', '0000');
     fbq('track','<?php echo $Event; ?>'<?php echo $Value; ?>);
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=<?= $FaceCon->pixel_id; ?>&ev=<?php echo $Event; ?><?php echo $PixelValue; ?>&noscript=1"
+               src="https://www.facebook.com/tr?id=0000&ev=<?php echo $Event; ?><?php echo $PixelValue; ?>&noscript=1"
     /></noscript>
 <!-- End Facebook Pixel Code -->
 
